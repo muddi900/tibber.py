@@ -75,6 +75,9 @@ class NonDecoratedTibberHome:
     def __str__(self) -> str: 
         return f'House ${self.app_nickname} is owned by ${self.owner} at ${self.address}'
 
+    def __repr__(self) -> str:
+        return f'House ${self.app_nickname} is owned by ${self.owner} at ${self.address}'
+
     @property
     def id(self) -> str:
         return self.cache.get("id")
